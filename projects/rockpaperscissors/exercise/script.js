@@ -86,7 +86,7 @@ function playGame() {
   answerButtons.forEach(answerButton => {
     answerButton.onclick = () => onClickRPS(answerButton);
   });
-  endButton.addEventListener("click", endGame());
+  endButton.onclick = () => endGame();
   // Add a click listener to the end game button that runs the endGame() function on click
   
 }
